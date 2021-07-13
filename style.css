@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #404040;
+}
+
+/* typography */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+}
+
+.font-bold{
+    font-weight: 900;
+}
+
+
+h2,
+.subtitle
+{
+    font-size: 1.3125rem;
+    font-weight: 900;
+    margin-top: 2em;
+}
+
+
+.subtitle, 
+.main-subtitle,
+.top-text {
+    color:#f18119;
+    text-transform: uppercase;
+}
+
+.submit-font {
+    color:#f18119;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
+.main-title {
+    margin-bottom: 0;
+}
+
+.subtitle,
+.main-subtitle {
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+
+.top-text{
+    font-size: 0.625rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    order: -1;
+    margin: 0 auto;
+    border-top: 5px solid #F18119;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+}
+
+.paragraph {
+    line-height: 1.3rem;
+    font-weight: 300;
+    max-width: 50rem;
+    margin: 1em auto;
+}
+
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+/* End typography */
+
+
+/*  ============
+    Intro Section
+    ============  */
+
+.header-image{
+    background-image: url(images/jon-tyson-kctt4tL1dkE-unsplash.jpg), linear-gradient(45deg,rgb(138, 83, 0) 20%, rgb(245, 209, 155), rgb(255, 255, 255));
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 .25em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 4em;
+}
+
+.image-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+
+.main-content{
+    margin: 0 auto;
+}
+
+
+
+
+
+/*=============
+    form
+===============*/
+
+form {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 300px;
+}
+
+input, 
+.btn {
+    border-radius: 8px;
+    width: 100%;
+}
+
+input {
+    margin-bottom: .75em;
+    padding: .5em;
+  
+    font-family: inherit;
+    text-align: inherit;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    background-image: linear-gradient(to left, #FF713B, #FFA51D);
+    border: none;
+    letter-spacing: 2px;
+    font-size: .8rem;
+    font-weight: 900;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #000;
+    outline: none;
+}
+
+.btn:active {
+    border: yellow solid 1px;
+}
+
+@media (min-width: 1200px){
+    body {
+        font-size: 1.25rem;
+    }
+    
+    body, 
+    .container {
+        display:flex;
+    }
+
+    .container {
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+ 
+    h2,
+    .subtitle {
+        font-size: 1.75rem;
+        margin-top: 0;
+    }
+
+    .header-image{
+        min-height: 100vh;
+        max-width: 50%;
+    }
+
+    .header-image,
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
